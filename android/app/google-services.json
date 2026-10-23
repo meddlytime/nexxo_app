@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "802775464020",
+    "project_id": "estoque-app-e07fb",
+    "storage_bucket": "estoque-app-e07fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802775464020:android:cd4533bbd0cf71b545d5c1",
+        "android_client_info": {
+          "package_name": "com.example.app_estoque"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmKmquvub8IFdOTTjcBqgNNHPYP6se0is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802775464020:android:3b06a8411d35bc4545d5c1",
+        "android_client_info": {
+          "package_name": "com.example.app_organizacao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmKmquvub8IFdOTTjcBqgNNHPYP6se0is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
