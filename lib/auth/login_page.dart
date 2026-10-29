@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:app_estoque/auth/login_adm_page.dart';
-import 'package:app_estoque/auth/login_gerente_page.dart';
-// Importação do serviço de PIN separado
-import 'package:app_estoque/auth/pin_auth_service.dart';
-import 'package:app_estoque/auth/cadastro_patrao_page.dart';
+import 'package:nexxo/auth/login_owner_page.dart';
+import 'package:nexxo/auth/login_manager_page.dart';
+import 'package:nexxo/auth/pin_auth_service.dart';
+import 'package:nexxo/auth/register_owner_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -13,7 +12,6 @@ class LoginPage extends StatelessWidget {
     final theme = Theme.of(context);
     final isEscuro = theme.brightness == Brightness.dark;
 
-    // Paleta Nexo Obsidian Purista
     final Color bgColor = isEscuro ? const Color(0xFF121214) : const Color(0xFFF6F6F9);
     final Color baseTextColor = isEscuro ? const Color(0xFFE5E5E5) : const Color(0xFF111111);
     final Color subTextColor = isEscuro ? Colors.white54 : const Color(0xFF6E6E73);
@@ -31,8 +29,6 @@ class LoginPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                
-                // 🏷️ LOGOTIPO IMPONENTE E VERTICAL
                 Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -47,7 +43,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 24),
                     Text(
-                      "NEXO",
+                      "NEXXO",
                       style: TextStyle(
                         fontSize: 42, 
                         fontWeight: FontWeight.w900, 
@@ -58,11 +54,11 @@ class LoginPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      "G E S T Ã O  D E  S I S T E M A S",
+                      "S Y S T E M S  M A N A G E M E N T",
                       style: TextStyle(
                         fontSize: 10, 
                         fontWeight: FontWeight.w600, 
-                        letterSpacing: 6, 
+                        letterSpacing: 4, 
                         color: subTextColor
                       ),
                     ),
@@ -71,9 +67,8 @@ class LoginPage extends StatelessWidget {
                 
                 const SizedBox(height: 60),
 
-                // 🟢 BOTÃO: ADM
                 _buildPremiumPortalButton(
-                  label: "Acesso Proprietário / ADM",
+                  label: "Owner Access",
                   icon: Icons.analytics_outlined,
                   accentColor: const Color(0xFF00E676),
                   cardColor: cardColor,
@@ -82,9 +77,8 @@ class LoginPage extends StatelessWidget {
                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginAdmPage())),
                 ),
 
-                // 🔵 BOTÃO: GERENTE
                 _buildPremiumPortalButton(
-                  label: "Acesso Gerente Local",
+                  label: "Local Manager Access",
                   icon: Icons.badge_outlined,
                   accentColor: const Color(0xFF2979FF),
                   cardColor: cardColor,
@@ -93,22 +87,20 @@ class LoginPage extends StatelessWidget {
                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginGerentePage())),
                 ),
 
-                // 🟠 BOTÃO: TERMINAL (CHAMADA EXTERNA)
                 _buildPremiumPortalButton(
-                  label: "Terminal da Equipe / Cozinha",
+                  label: "Team Terminal",
                   icon: Icons.layers_outlined,
                   accentColor: const Color(0xFFFF9100),
                   cardColor: cardColor,
                   borderColor: borderColor,
                   textColor: baseTextColor,
                   onTap: () async {
-                    // Lista de funcionários que viria do seu banco de dados/Firestore
                     final mockFuncionarios = [
-                      {"nome": "Cozinha", "pin": "1234"},
-                      {"nome": "Bar", "pin": "0000"}
+                      {"nome": "Kitchen", "pin": "0000"},
+                      {"nome": "Bar", "pin": "0000"},
+                      {"nome": "Cashier", "pin": "0000"}
                     ];
 
-                    // Chama o serviço externo e aguarda o resultado
                     bool autorizado = await PinAuthService.validarPin(context, funcionarios: mockFuncionarios);
 
                     if (autorizado && context.mounted) {
@@ -119,36 +111,32 @@ class LoginPage extends StatelessWidget {
                 
                 const SizedBox(height: 40),
                 
-             // ... dentro da sua LoginPage, no TextButton:
-
-// ... dentro da sua LoginPage, no TextButton:
-Center(
-  child: TextButton(
-    // 🚀 Redireciona para a tela de Cadastro
-    onPressed: () => Navigator.push(
-      context, 
-      MaterialPageRoute(builder: (_) => const CadastroPatraoPage())
-    ),
-    style: TextButton.styleFrom(foregroundColor: theme.primaryColor),
-    child: RichText(
-      text: TextSpan(
-        text: "Novo por aqui? ",
-        style: TextStyle(color: subTextColor, fontSize: 13),
-        children: [
-          TextSpan(
-            text: "Cadastre seu restaurante.",
-            style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold),
-          ),
-        ],
-      ),
-    ),
-  ),
-),
+                Center(
+                  child: TextButton(
+                    onPressed: () => Navigator.push(
+                      context, 
+                      MaterialPageRoute(builder: (_) => const CadastroPatraoPage())
+                    ),
+                    style: TextButton.styleFrom(foregroundColor: theme.primaryColor),
+                    child: RichText(
+                      text: TextSpan(
+                        text: "New here? ",
+                        style: TextStyle(color: subTextColor, fontSize: 13),
+                        children: [
+                          TextSpan(
+                            text: "Register your restaurant.",
+                            style: TextStyle(color: theme.primaryColor, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
 
                 const SizedBox(height: 20),
                 Center(
                   child: Text(
-                    "Nexo Engenharia de Sistemas © 2026",
+                    "Nexxo Systems Management © 2026",
                     style: TextStyle(color: subTextColor.withOpacity(0.4), fontSize: 11, letterSpacing: 0.5),
                   ),
                 ),
