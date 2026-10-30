@@ -13,6 +13,7 @@
   <a href="#-english">🇺🇸 English</a> | <a href="#-português">🇧🇷 Português</a>
 </p>
 
+
 ---
 
 <a id="-english"></a>
@@ -47,7 +48,7 @@ As an evolving prototype under active development, Nexxo's upcoming milestones i
 ## 🇧🇷 Português
 
 ### 💡 Sobre o Nexxo
-O **Nexxo** é uma solução mobile moderna, atualmente um protótipo em desenvolvimento utilizando **Flutter**, projetada para centralizar e otimizar a gestão operacional de redes de restaurantes e cozinhas comerciais.
+O **Nexxo** é uma solução mobile moderna, atualmente um protótipo em desenvolvimento utilizando **Flutter**, projetado para centralizar e otimizar a gestão operacional de redes de restaurantes e cozinhas comerciais.
 
 ### ⚠️ O Problema
 Negócios do ramo gastronômico e cozinhas comerciais enfrentam grandes gargalos operacionais no dia a dia:
@@ -77,7 +78,7 @@ Como um protótipo em constante evolução e desenvolvimento ativo, os próximos
 | :--- | :--- |
 | *Core & Framework* | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat-square&logo=Flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) |
 | *State & Storage* | ![Riverpod](https://img.shields.io/badge/Riverpod-000000?style=flat-square&logo=flutter&logoColor=white) ![Hive](https://img.shields.io/badge/Hive-FFC107?style=flat-square&logo=databricks&logoColor=white) |
-| *Backend & Cloud* | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) |
+| *Backend & Cloud* | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) |
 | *Workflow & CI/CD* | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white) |
 
 ---
@@ -96,3 +97,12 @@ flutter pub get
 
 # Run the application / Execute a aplicação
 flutter run
+
+```
+
+---
+
+## 📄 License / Licença
+
+- This project is licensed under the **MIT License**   
+- *Este projeto está sob a licença MIT*
