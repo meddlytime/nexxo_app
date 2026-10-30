@@ -1,45 +1,66 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ==========================================
+# FIREBASE & CLOUD CREDENTIALS (SENSITIVE)
+# ==========================================
+google-services.json
+GoogleService-Info.plist
+*service-account*.json
+firebase-debug.log
+.firebaserc
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# Variáveis de ambiente e segredos
+.env
+.env.*
+*.json
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
+# ==========================================
+# Flutter / Dart / Pub related
+# ==========================================
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
 /coverage/
 
-# Symbolication related
+# Symbolication & Obfuscation
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
+# Android Studio / Gradle build artifacts
 /android/app/debug
 /android/app/profile
 /android/app/release
+.gradle/
+local.properties
+
+# IDEs & Editores (Android Studio / IntelliJ / VS Code)
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Configurações de SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
