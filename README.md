@@ -79,8 +79,7 @@ Como um protótipo em constante evolução e desenvolvimento ativo, os próximos
 | *Core & Framework* | ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat-square&logo=Flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white) |
 | *State & Storage* | ![Riverpod](https://img.shields.io/badge/Riverpod-000000?style=flat-square&logo=flutter&logoColor=white) ![Hive](https://img.shields.io/badge/Hive-FFC107?style=flat-square&logo=databricks&logoColor=white) |
 | *Backend & Cloud* | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) |
-| *Workflow & CI/CD* | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white) |
-
+| *Workflow & CI/CD* | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) 
 ---
 
 ## 🚀 Getting Started / Como Executar
