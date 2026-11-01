@@ -42,6 +42,27 @@ As an evolving prototype under active development, Nexxo's upcoming milestones i
 - [ ] **Role-Based Access Control (RBAC):** Granular permissions separating kitchen staff from administrative dashboards.
 - [ ] **Exportable Analytics:** Advanced PDF/Excel report generation for deep financial auditing.
 
+## 📂 Repository Structure
+
+```text
+.
+├── android/               # Native Android ecosystem configurations
+├── assets/                # Images, fonts, and static assets
+├── ios/                   # Native iOS ecosystem configurations
+├── lib/                   # Main Dart source code (views, widgets, and business logic)
+├── linux/                 # Native Linux desktop platform files
+├── macos/                 # Native macOS desktop platform files
+├── web/                   # Web platform specific entry point and files
+├── windows/               # Native Windows desktop platform files
+├── .gitignore             # Preventive filter for temporary files and API keys
+├── .metadata              # Flutter project metadata and tracking
+├── analysis_options.yaml  # Static analysis rules and linter configuration
+├── pubspec.lock           # Exact pinned versions of project dependencies
+├── pubspec.yaml           # Dependency management, fonts, and assets configuration
+└── README.md              # Project documentation and guidelines
+```
+
+
 ---
 
 <a id="-português"></a>
@@ -70,6 +91,25 @@ Como um protótipo em constante evolução e desenvolvimento ativo, os próximos
 - [ ] **Controle de Acesso por Funções (RBAC):** Permissões granulares separando equipes operacionais de painéis gerenciais.
 - [ ] **Relatórios Avançados:** Exportação de dados e relatórios detalhados para auditoria financeira.
 
+### 📂 Estrutura do Repositório
+
+```text
+.
+├── android/               # Configurações nativas do ecossistema Android
+├── assets/                # Imagens, fontes e recursos estáticos
+├── ios/                   # Configurações nativas do ecossistema iOS
+├── lib/                   # Código-fonte principal em Dart (views, widgets e lógica de negócio)
+├── linux/                 # Ficheiros nativos para a plataforma desktop Linux
+├── macos/                 # Ficheiros nativos para a plataforma desktop macOS
+├── web/                   # Ponto de entrada e ficheiros específicos para a plataforma Web
+├── windows/               # Ficheiros nativos para a plataforma desktop Windows
+├── .gitignore             # Filtro preventivo para ficheiros temporários e chaves de API
+├── .metadata              # Metadados e controlo do projeto Flutter
+├── analysis_options.yaml  # Regras de análise estática e configuração do linter
+├── pubspec.lock           # Versões exatas e fixadas das dependências do projeto
+├── pubspec.yaml           # Gestão de dependências, fontes e configuração de assets
+└── README.md              # Documentação e diretrizes do projeto
+```
 ---
 
 ## ⚙️ Tech Stack / Stack Tecnológica
